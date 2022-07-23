@@ -99,7 +99,7 @@ class CustomerRegistrationView(View):
 #         return render(request,'realstore/login.html',{'form':form})
 
 def address(request):
-    address = customer.objects.get(user = request.user)
+    address = customer.objects.filter(user = request.user)
     return render(request,'realstore/address.html',{'address':address,'active': 'btn-primary'})
 
 def checkout(request):
