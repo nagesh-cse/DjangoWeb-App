@@ -8,6 +8,8 @@ from django.contrib import messages
 # def home(request):
 #     return render(request,'realstore/home.html')
 
+# hello
+
 class ProductView(View):
     
     def get(self,request):
