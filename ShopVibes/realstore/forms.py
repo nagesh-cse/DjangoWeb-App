@@ -66,7 +66,7 @@ class MyPasswordConfirmForm(SetPasswordForm):
 class CustomerProfileForm(forms.ModelForm):
     class Meta:
         model = customer
-        fields = ['name','locality','city','zipcode']
+        fields = ['name','locality','city','state','zipcode']
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control'}),
             'locality': forms.TextInput(attrs={'class': 'form-control'}),
